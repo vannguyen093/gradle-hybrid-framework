@@ -16,6 +16,10 @@ repositories {
     mavenCentral()
 }
 
+configurations {
+    aspectj
+}
+
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
@@ -30,7 +34,7 @@ dependencies {
     implementation group: 'org.seleniumhq.selenium', name: 'selenium-support', version: '3.141.59'
 
     // https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager
-    implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '4.4.3'
+    implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '5.0.2'
 
     // https://mvnrepository.com/artifact/org.uncommons/reportng
     testImplementation group: 'org.uncommons', name: 'reportng', version: '1.1.4'
@@ -45,7 +49,7 @@ dependencies {
     implementation group: 'joda-time', name: 'joda-time', version: '2.12.1'
 
     // https://mvnrepository.com/artifact/com.aventstack/extentreports
-    implementation group: 'com.aventstack', name: 'extentreports', version: '4.0.9'
+    implementation group: 'com.aventstack', name: 'extentreports', version: '5.0.8'
 
     // https://mvnrepository.com/artifact/log4j/log4j
     implementation group: 'log4j', name: 'log4j', version: '1.2.16'
@@ -66,13 +70,17 @@ dependencies {
     implementation group: 'com.github.javafaker', name: 'javafaker', version: '1.0.2'
 
     // https://mvnrepository.com/artifact/io.qameta.allure/allure-testng
-    implementation group: 'io.qameta.allure', name: 'allure-testng', version: '2.13.5'
+    implementation group: 'io.qameta.allure', name: 'allure-testng', version: '2.18.1'
 
     // https://mvnrepository.com/artifact/org.aspectj/aspectjweaver
-    runtimeOnly group: 'org.aspectj', name: 'aspectjweaver', version: '1.8.10'
+    runtimeOnly group: 'org.aspectj', name: 'aspectjweaver', version: '1.9.8'
+    aspectj group: 'org.aspectj', name: 'aspectjweaver', version: '1.9.8'
 }
 
 test {
+    doFirst {
+        jvmArgs "-javaagent:"+configurations.aspectj.asPath
+    }
     useTestNG() {
         suites 'src/test/resources/runNopCommerceTest.xml'
         outputDirectory = file("$projectDir/report-output")
