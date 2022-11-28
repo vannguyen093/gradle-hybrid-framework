@@ -27,7 +27,7 @@ public class Level_18_Manage_Data_Json extends BaseTest {
     @BeforeClass
     public void beforeClass(String browserName, String appUrl) {
 
-        driver = getBrowserDriver(browserName, appUrl);
+        driver = getBrowserDriverA(browserName, appUrl);
 
         homePage = PageGeneratorManager.getUserHomePage(driver);
         userData = UserDataMapper.getUserData();
