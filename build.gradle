@@ -75,6 +75,8 @@ dependencies {
     // https://mvnrepository.com/artifact/org.aspectj/aspectjweaver
     runtimeOnly group: 'org.aspectj', name: 'aspectjweaver', version: '1.9.8'
     aspectj group: 'org.aspectj', name: 'aspectjweaver', version: '1.9.8'
+
+    implementation group: 'org.aeonbits.owner', name: 'owner', version: '1.0.12'
 }
 
 configurations.implementation {
@@ -93,4 +95,6 @@ test {
     testLogging {
         showStandardStreams = true
     }
+    systemProperty 'evnGradle', System.getProperty('evnGradle', 'evnGradle')
+    systemProperty "file.encoding", "utf-8"
 }
