@@ -8,7 +8,7 @@ version '1.0-SNAPSHOT'
 compileJava.options.encoding = 'UTF-8'
 compileTestJava.options.encoding = 'UTF-8'
 
-tasks.withType(JavaCompile){
+tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 
@@ -75,6 +75,8 @@ dependencies {
     // https://mvnrepository.com/artifact/org.aspectj/aspectjweaver
     runtimeOnly group: 'org.aspectj', name: 'aspectjweaver', version: '1.9.8'
     aspectj group: 'org.aspectj', name: 'aspectjweaver', version: '1.9.8'
+
+    implementation group: 'org.aeonbits.owner', name: 'owner', version: '1.0.12'
 }
 
 configurations.implementation {
@@ -83,7 +85,7 @@ configurations.implementation {
 
 test {
     doFirst {
-        jvmArgs "-javaagent:"+configurations.aspectj.asPath
+        jvmArgs "-javaagent:" + configurations.aspectj.asPath
     }
     useTestNG() {
         suites 'src/test/resources/runNopCommerceTest.xml'
@@ -93,4 +95,6 @@ test {
     testLogging {
         showStandardStreams = true
     }
+    systemProperty 'evnGradle', System.getProperty('evnGradle', 'evnGradle')
+    systemProperty "file.encoding", "utf-8"
 }

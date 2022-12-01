@@ -22,7 +22,7 @@ public class Level_15_Pattern_Object extends BaseTest {
     @BeforeClass
     public void beforeClass(String browserName, String appUrl) {
 
-        driver = getBrowserDriver(browserName, appUrl);
+        driver = getBrowserDriverA(browserName, appUrl);
 
         homePage = PageGeneratorManager.getUserHomePage(driver);
 

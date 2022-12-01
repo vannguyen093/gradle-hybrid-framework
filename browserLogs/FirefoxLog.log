@@ -1,10 +1,9 @@
-1669521972013	geckodriver	INFO	Listening on 127.0.0.1:1224
-1669521972975	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Hong Trang\\AppData\\Local\\Temp\\rust_mozprofileSpFlBE"
-1669521973785	Marionette	INFO	Marionette enabled
-1669521973792	Marionette	INFO	Listening on port 52893
-Read port: 52893
-1669521974252	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Hong Trang\\AppData\\Local\\Temp\\rust_mozprofileSpFlBE\\search.json.mozlz4", (void 0)))
-console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.nopcommerce.com."
-console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.nopcommerce.com."
-1669521987750	Marionette	INFO	Stopped listening on port 52893
+1669642819840	geckodriver	INFO	Listening on 127.0.0.1:11082
+1669642820666	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Van Nguyen\\AppData\\Local\\Temp\\rust_mozprofileYCh2os"
+1669642821029	Marionette	INFO	Marionette enabled
+1669642821035	Marionette	INFO	Listening on port 54438
+Read port: 54438
+1669642821302	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Van Nguyen\\AppData\\Local\\Temp\\rust_mozprofileYCh2os\\search.json.mozlz4", (void 0)))
+1669642823419	Marionette	INFO	Stopped listening on port 54438
+console.warn: services.settings: main/query-stripping sync interrupted by shutdown
