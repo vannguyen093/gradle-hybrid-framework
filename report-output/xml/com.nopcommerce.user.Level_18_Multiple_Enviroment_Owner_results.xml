@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run on Firefox"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="25.842">
+  <properties />
+  
+  
+            <testcase name="User_03_My_Account" time="5.130" classname="com.nopcommerce.user.Level_18_Multiple_Enviroment_Owner" />
+                <testcase name="User_01_Register_Login" time="15.375" classname="com.nopcommerce.user.Level_18_Multiple_Enviroment_Owner" />
+                <testcase name="User_02_Login" time="5.337" classname="com.nopcommerce.user.Level_18_Multiple_Enviroment_Owner" />
+      
+</testsuite>
