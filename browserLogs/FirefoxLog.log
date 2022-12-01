@@ -1,9 +1,9 @@
-1669642819840	geckodriver	INFO	Listening on 127.0.0.1:11082
-1669642820666	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Van Nguyen\\AppData\\Local\\Temp\\rust_mozprofileYCh2os"
-1669642821029	Marionette	INFO	Marionette enabled
-1669642821035	Marionette	INFO	Listening on port 54438
-Read port: 54438
-1669642821302	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Van Nguyen\\AppData\\Local\\Temp\\rust_mozprofileYCh2os\\search.json.mozlz4", (void 0)))
-1669642823419	Marionette	INFO	Stopped listening on port 54438
-console.warn: services.settings: main/query-stripping sync interrupted by shutdown
+1669899175014	geckodriver	INFO	Listening on 127.0.0.1:29682
+1669899176037	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Hong Trang\\AppData\\Local\\Temp\\rust_mozprofile5fNmdD"
+1669899177026	Marionette	INFO	Marionette enabled
+1669899177034	Marionette	INFO	Listening on port 52283
+Read port: 52283
+1669899177177	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Hong Trang\\AppData\\Local\\Temp\\rust_mozprofile5fNmdD\\search.json.mozlz4", (void 0)))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://automationtest.com:8080."
+1669899193577	Marionette	INFO	Stopped listening on port 52283

@@ -70,3 +70,40 @@
 [2022-11-28 20:46:14,794]  -------------------------- PASSED -------------------------- 
 [2022-11-28 20:46:14,796] OS name = windows 11
 [2022-11-28 20:46:14,797] Driver instance name = chromedriver: chrome on windows (f9dfaadc45d9017d7a30da789c84b13b)
+[2022-12-01 19:49:42,793] Pre-Condition - Step 01: Open browser and admin url
+[2022-12-01 19:49:50,548] Pre-Condition - Step 02: Enter to Username textbox with value is vannguyen093
+[2022-12-01 19:50:02,749] OS name = windows 10
+[2022-12-01 19:50:02,750] Driver instance name = firefoxdriver: firefox on windows (c020f418-8bf8-4e43-89a5-8cec0d5279ba)
+[2022-12-01 19:50:02,799] Failed to decode response from marionette
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-U5D1GF0', ip: '192.168.53.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 107.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20221128144904, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 3312, moz:profile: C:\Users\Hong Trang\AppData..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c020f418-8bf8-4e43-89a5-8cec0d5279ba
+[2022-12-01 19:50:30,832] Pre-Condition - Step 01: Open browser and admin url
+[2022-12-01 19:50:41,770] Pre-Condition - Step 02: Enter to Username textbox with value is vannguyen093
+[2022-12-01 19:50:42,216] Pre-Condition - Step 03: Enter to Password textbox with value is vannguyen093
+[2022-12-01 19:50:42,489] Pre-Condition - Step 04: Click to 'Login' button
+[2022-12-01 19:50:44,383] View_User - Step 01: Click to 'User' menu link
+[2022-12-01 19:51:13,717] Pre-Condition - Step 01: Open browser and admin url
+[2022-12-01 19:51:26,302] Pre-Condition - Step 02: Enter to Username textbox with value is vannguyen093
+[2022-12-01 19:51:26,624] Pre-Condition - Step 03: Enter to Password textbox with value is changchang710
+[2022-12-01 19:51:26,761] Pre-Condition - Step 04: Click to 'Login' button
+[2022-12-01 19:51:30,283] View_User - Step 01: Click to 'User' menu link
+[2022-12-01 19:51:32,075] View_User - Step 02: Get all user at UI
+[2022-12-01 19:51:32,210] View_User - Step 03: Get all user at DB
+[2022-12-01 19:51:33,627] View_User - Step 04: Verify user number is exactly
+[2022-12-01 19:51:33,640]  -------------------------- FAILED -------------------------- 
+[2022-12-01 19:51:34,357] OS name = windows 10
+[2022-12-01 19:51:34,360] Driver instance name = firefoxdriver: firefox on windows (b8cba8c0-2a1b-44c9-9b6d-9cc048760c50)
+[2022-12-01 19:52:53,878] Pre-Condition - Step 01: Open browser and admin url
+[2022-12-01 19:53:05,178] Pre-Condition - Step 02: Enter to Username textbox with value is vannguyen093
+[2022-12-01 19:53:05,408] Pre-Condition - Step 03: Enter to Password textbox with value is changchang710
+[2022-12-01 19:53:05,527] Pre-Condition - Step 04: Click to 'Login' button
+[2022-12-01 19:53:09,716] View_User - Step 01: Click to 'User' menu link
+[2022-12-01 19:53:11,849] View_User - Step 02: Get all user at UI
+[2022-12-01 19:53:12,005] View_User - Step 03: Get all user at DB
+[2022-12-01 19:53:13,120] View_User - Step 04: Verify user number is exactly
+[2022-12-01 19:53:13,125]  -------------------------- PASSED -------------------------- 
+[2022-12-01 19:53:13,547] OS name = windows 10
+[2022-12-01 19:53:13,547] Driver instance name = firefoxdriver: firefox on windows (5fd43f38-5edb-4534-bbdf-eff648d84467)
