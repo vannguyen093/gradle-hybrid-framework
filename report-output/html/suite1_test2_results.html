@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Run on Safari</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>Run on Safari</h1>
+<p>
+  Test duration: 34.623s
+</p>
+
+  <table class="resultsTable configTable">
+    <tr><th colspan="3" class="header failedConfig">Failed Configuration</th></tr>
+              <tr class="group">
+        <td colspan="3">com.nopcommerce.user.Level_19_Browser_Testing_Browserstack</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  afterClass
+      </td>
+  <td class="duration">
+    1.846s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [2022-12-02 14:47:25,462] OS name = windows 10<br/>
+&lt;br&gt;<br />
+                                [2022-12-02 14:47:25,462] Driver instance name = remotewebdriver: safari on mac (0ae25ecf0d046b0c0cc778d7481fa78e1c47fd55)<br/>
+&lt;br&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.IllegalArgumentException: Empty command</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              java.base/java.lang.Runtime.exec(Runtime.java:407)<br />
+              java.base/java.lang.Runtime.exec(Runtime.java:310)<br />
+              commons.BaseTest.closeBrowserAndDriver(BaseTest.java:292)<br />
+              com.nopcommerce.user.Level_19_Browser_Testing_Browserstack.afterClass(Level_19_Browser_Testing_Browserstack.java:131)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:566)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)<br />
+              org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)<br />
+              org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:214)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+              org.testng.TestRunner.run(TestRunner.java:505)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
+              org.testng.TestNG.run(TestNG.java:1017)<br />
+              org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)<br />
+              org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)<br />
+              org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:566)<br />
+              org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)<br />
+              org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)<br />
+              org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)<br />
+              org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)<br />
+              com.sun.proxy.$Proxy2.stop(Unknown Source)<br />
+              org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)<br />
+              org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)<br />
+              org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)<br />
+              org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)<br />
+              org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)<br />
+              org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)<br />
+              org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)<br />
+              worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />
+              worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br />
+                </div>
+      </td>
+</tr>
+    
+      </table>
+
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.nopcommerce.user.Level_19_Browser_Testing_Browserstack</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  User_01_Register_Login
+      </td>
+  <td class="duration">
+    15.173s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [2022-12-02 14:46:59,232] Register - Step 01: Click to &apos;Register&apos; link<br/>
+&lt;br&gt;<br />
+                                [2022-12-02 14:47:00,188] Register - Step 02: Click to &apos;Radio&apos; button with value &apos;Male&apos;<br/>
+&lt;br&gt;<br />
+                                [2022-12-02 14:47:01,982] Register - Step 03: Enter to First Name textbox with value is Helen<br/>
+&lt;br&gt;<br />
+                                [2022-12-02 14:47:02,927] Register - Step 04: Enter to Last Name textbox with value is Hoeger<br/>
+&lt;br&gt;<br />
+                                [2022-12-02 14:47:03,758] Register - Step 05: Select date in Day dropdown with value is 30<br/>
+&lt;br&gt;<br />
+                                [2022-12-02 14:47:05,119] Register - Step 06: Select month in Month dropdown with value is May<br/>
+&lt;br&gt;<br />
+                                [2022-12-02 14:47:06,455] Register - Step 07: Select year in Year dropdown with value is 1993<br/>
+&lt;br&gt;<br />
+                                [2022-12-02 14:47:07,764] Register - Step 08: Enter to Email textbox with value is jonell.conn@hotmail.com<br/>
+&lt;br&gt;<br />
+                                [2022-12-02 14:47:08,761] Register - Step 09: Enter to Password textbox with value is odr8en4690h2ko6<br/>
+&lt;br&gt;<br />
+                                [2022-12-02 14:47:09,625] Register - Step 10: Enter to Confirm Password textbox with value is odr8en4690h2ko6<br/>
+&lt;br&gt;<br />
+                                [2022-12-02 14:47:10,410] Register - Step 11: Click to &apos;News letter&apos; checkbox<br/>
+&lt;br&gt;<br />
+                                [2022-12-02 14:47:11,130] Register - Step 12: Click to &apos;Register&apos; button<br/>
+&lt;br&gt;<br />
+                                [2022-12-02 14:47:11,897] Register - Step 13: Verify the &apos;Success Message&apos; is displayed<br/>
+&lt;br&gt;<br />
+                                [2022-12-02 14:47:13,594]&nbsp; -------------------------- PASSED -------------------------- <br/>
+&lt;br&gt;<br />
+                                [2022-12-02 14:47:13,595] Register - Step 14: Click to &apos;Log out&apos; link<br/>
+&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  User_02_Login
+      </td>
+  <td class="duration">
+    5.867s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [2022-12-02 14:47:14,407] Login - Step 01: Click to &apos;Login&apos; link<br/>
+&lt;br&gt;<br />
+                                [2022-12-02 14:47:16,161] Login - Step 02: Enter to Email textbox with value is jonell.conn@hotmail.com<br/>
+&lt;br&gt;<br />
+                                [2022-12-02 14:47:17,860] Login - Step 03: Enter to Password textbox with value is odr8en4690h2ko6<br/>
+&lt;br&gt;<br />
+                                [2022-12-02 14:47:19,503] Login - Step 04: Click to &apos;Login&apos; button<br/>
+&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  User_03_My_Account
+      </td>
+  <td class="duration">
+    5.184s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [2022-12-02 14:47:20,276] My Account - Step 01: Click to &apos;My Account&apos; link<br/>
+&lt;br&gt;<br />
+                                [2022-12-02 14:47:22,196] My Account - Step 02: Verify &apos;Customer Info&apos; page is displayed<br/>
+&lt;br&gt;<br />
+                                [2022-12-02 14:47:23,671]&nbsp; -------------------------- PASSED -------------------------- <br/>
+&lt;br&gt;<br />
+                                [2022-12-02 14:47:23,672] My Account - Step 03: Verify &apos;First Name&apos; value is correctly<br/>
+&lt;br&gt;<br />
+                                [2022-12-02 14:47:24,261]&nbsp; -------------------------- PASSED -------------------------- <br/>
+&lt;br&gt;<br />
+                                [2022-12-02 14:47:24,261] My Account - Step 03: Verify &apos;Last Name&apos; value is correctly<br/>
+&lt;br&gt;<br />
+                                [2022-12-02 14:47:24,869]&nbsp; -------------------------- PASSED -------------------------- <br/>
+&lt;br&gt;<br />
+                                [2022-12-02 14:47:24,870] My Account - Step 03: Verify &apos;Email&apos; value is correctly<br/>
+&lt;br&gt;<br />
+                                [2022-12-02 14:47:25,458]&nbsp; -------------------------- PASSED -------------------------- <br/>
+&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

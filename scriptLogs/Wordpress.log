@@ -107,3 +107,71 @@ Session ID: c020f418-8bf8-4e43-89a5-8cec0d5279ba
 [2022-12-01 19:53:13,125]  -------------------------- PASSED -------------------------- 
 [2022-12-01 19:53:13,547] OS name = windows 10
 [2022-12-01 19:53:13,547] Driver instance name = firefoxdriver: firefox on windows (5fd43f38-5edb-4534-bbdf-eff648d84467)
+[2022-12-02 14:36:24,690] OS name = windows 10
+[2022-12-02 14:36:24,692] Driver instance name = remotewebdriver: firefox on windows (39d5767d64db6176e0e4e9c44bd18f48474bc604)
+[2022-12-02 14:36:32,369] OS name = windows 10
+[2022-12-02 14:36:32,369] Driver instance name = remotewebdriver: safari on mac (bae9b5c677f43b89bc45e262ca8bcdad17052ebb)
+[2022-12-02 14:41:45,934] OS name = windows 10
+[2022-12-02 14:41:45,937] Driver instance name = remotewebdriver: firefox on windows (1fa084d8e921a2365077c8bbabfa1bff68689e04)
+[2022-12-02 14:41:54,415] OS name = windows 10
+[2022-12-02 14:41:54,415] Driver instance name = remotewebdriver: safari on mac (d6327055bedc2adbf064591e2550e1a22972c81b)
+[2022-12-02 14:46:13,762] Register - Step 01: Click to 'Register' link
+[2022-12-02 14:46:15,424] Register - Step 02: Click to 'Radio' button with value 'Male'
+[2022-12-02 14:46:16,641] Register - Step 03: Enter to First Name textbox with value is Candance
+[2022-12-02 14:46:17,537] Register - Step 04: Enter to Last Name textbox with value is Boyle
+[2022-12-02 14:46:18,415] Register - Step 05: Select date in Day dropdown with value is 30
+[2022-12-02 14:46:20,412] Register - Step 06: Select month in Month dropdown with value is May
+[2022-12-02 14:46:22,135] Register - Step 07: Select year in Year dropdown with value is 1993
+[2022-12-02 14:46:23,807] Register - Step 08: Enter to Email textbox with value is vinnie.runte@gmail.com
+[2022-12-02 14:46:24,768] Register - Step 09: Enter to Password textbox with value is 535j0tx8
+[2022-12-02 14:46:25,652] Register - Step 10: Enter to Confirm Password textbox with value is 535j0tx8
+[2022-12-02 14:46:26,513] Register - Step 11: Click to 'News letter' checkbox
+[2022-12-02 14:46:29,408] Register - Step 12: Click to 'Register' button
+[2022-12-02 14:46:32,240] Register - Step 13: Verify the 'Success Message' is displayed
+[2022-12-02 14:46:32,907]  -------------------------- PASSED -------------------------- 
+[2022-12-02 14:46:32,907] Register - Step 14: Click to 'Log out' link
+[2022-12-02 14:46:38,745] Login - Step 01: Click to 'Login' link
+[2022-12-02 14:46:41,021] Login - Step 02: Enter to Email textbox with value is vinnie.runte@gmail.com
+[2022-12-02 14:46:41,918] Login - Step 03: Enter to Password textbox with value is 535j0tx8
+[2022-12-02 14:46:43,374] Login - Step 04: Click to 'Login' button
+[2022-12-02 14:46:45,213] My Account - Step 01: Click to 'My Account' link
+[2022-12-02 14:46:47,688] My Account - Step 02: Verify 'Customer Info' page is displayed
+[2022-12-02 14:46:48,415]  -------------------------- PASSED -------------------------- 
+[2022-12-02 14:46:48,416] My Account - Step 03: Verify 'First Name' value is correctly
+[2022-12-02 14:46:49,118]  -------------------------- PASSED -------------------------- 
+[2022-12-02 14:46:49,119] My Account - Step 03: Verify 'Last Name' value is correctly
+[2022-12-02 14:46:49,816]  -------------------------- PASSED -------------------------- 
+[2022-12-02 14:46:49,816] My Account - Step 03: Verify 'Email' value is correctly
+[2022-12-02 14:46:50,490]  -------------------------- PASSED -------------------------- 
+[2022-12-02 14:46:50,494] OS name = windows 10
+[2022-12-02 14:46:50,495] Driver instance name = remotewebdriver: firefox on windows (afc7337c4df9598c9df045870c6f9af2dc29c76e)
+[2022-12-02 14:46:59,232] Register - Step 01: Click to 'Register' link
+[2022-12-02 14:47:00,188] Register - Step 02: Click to 'Radio' button with value 'Male'
+[2022-12-02 14:47:01,982] Register - Step 03: Enter to First Name textbox with value is Helen
+[2022-12-02 14:47:02,927] Register - Step 04: Enter to Last Name textbox with value is Hoeger
+[2022-12-02 14:47:03,758] Register - Step 05: Select date in Day dropdown with value is 30
+[2022-12-02 14:47:05,119] Register - Step 06: Select month in Month dropdown with value is May
+[2022-12-02 14:47:06,455] Register - Step 07: Select year in Year dropdown with value is 1993
+[2022-12-02 14:47:07,764] Register - Step 08: Enter to Email textbox with value is jonell.conn@hotmail.com
+[2022-12-02 14:47:08,761] Register - Step 09: Enter to Password textbox with value is odr8en4690h2ko6
+[2022-12-02 14:47:09,625] Register - Step 10: Enter to Confirm Password textbox with value is odr8en4690h2ko6
+[2022-12-02 14:47:10,410] Register - Step 11: Click to 'News letter' checkbox
+[2022-12-02 14:47:11,130] Register - Step 12: Click to 'Register' button
+[2022-12-02 14:47:11,897] Register - Step 13: Verify the 'Success Message' is displayed
+[2022-12-02 14:47:13,594]  -------------------------- PASSED -------------------------- 
+[2022-12-02 14:47:13,595] Register - Step 14: Click to 'Log out' link
+[2022-12-02 14:47:14,407] Login - Step 01: Click to 'Login' link
+[2022-12-02 14:47:16,161] Login - Step 02: Enter to Email textbox with value is jonell.conn@hotmail.com
+[2022-12-02 14:47:17,860] Login - Step 03: Enter to Password textbox with value is odr8en4690h2ko6
+[2022-12-02 14:47:19,503] Login - Step 04: Click to 'Login' button
+[2022-12-02 14:47:20,276] My Account - Step 01: Click to 'My Account' link
+[2022-12-02 14:47:22,196] My Account - Step 02: Verify 'Customer Info' page is displayed
+[2022-12-02 14:47:23,671]  -------------------------- PASSED -------------------------- 
+[2022-12-02 14:47:23,672] My Account - Step 03: Verify 'First Name' value is correctly
+[2022-12-02 14:47:24,261]  -------------------------- PASSED -------------------------- 
+[2022-12-02 14:47:24,261] My Account - Step 03: Verify 'Last Name' value is correctly
+[2022-12-02 14:47:24,869]  -------------------------- PASSED -------------------------- 
+[2022-12-02 14:47:24,870] My Account - Step 03: Verify 'Email' value is correctly
+[2022-12-02 14:47:25,458]  -------------------------- PASSED -------------------------- 
+[2022-12-02 14:47:25,462] OS name = windows 10
+[2022-12-02 14:47:25,462] Driver instance name = remotewebdriver: safari on mac (0ae25ecf0d046b0c0cc778d7481fa78e1c47fd55)

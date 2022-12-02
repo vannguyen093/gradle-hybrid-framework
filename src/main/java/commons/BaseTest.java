@@ -11,12 +11,16 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeSuite;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
@@ -115,7 +119,26 @@ public class BaseTest {
                 throw new RuntimeException("Browser not supported: " + browserName);
         }
         driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
-        driver.get(getEnvironmentUrl(enviromentName));
+        driver.get(enviromentName);
+        return driver;
+    }
+
+    protected WebDriver getBrowserDriverBrowserstack(String browserName, String enviromentName, String osName, String osVersion) {
+        DesiredCapabilities caps = new DesiredCapabilities();
+        caps.setCapability("os", osName);
+        caps.setCapability("os_version", osVersion);
+        caps.setCapability("browser", browserName);
+        caps.setCapability("project", "NopCommerce");
+        caps.setCapability("browser_version", "latest");
+        caps.setCapability("browserstack.debug", "true");
+        caps.setCapability("name", "Run on " + osName + " | " + osVersion + " | " + browserName);
+        try {
+            driver = new RemoteWebDriver(new URL(GlobalConstants.BROWSER_STACK_URL), caps);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+        driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
+        driver.get(enviromentName);
         return driver;
     }
 

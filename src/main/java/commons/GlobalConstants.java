@@ -28,4 +28,7 @@ public class GlobalConstants {
     public static final long LONG_TIMEOUT = 30;
     public static final long RETRY_TEST_FAIL = 3;
     public static final String JAVA_VERSION = System.getProperty("java.version");
+    public static final String BROWSER_NAME = "vannguyen_fXcelZ";
+    public static final String BROWSER_ACCESS_KEY = "rg7tBFkEazjzz2kqmJoh";
+    public static final String BROWSER_STACK_URL = "https://" + BROWSER_NAME + ":" + BROWSER_ACCESS_KEY + "@hub-cloud.browserstack.com/wd/hub";
 }
