@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run on Chrome"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="11.800">
+  <properties />
+  
+  
+            <testcase name="User_03_My_Account" time="1.303" classname="com.nopcommerce.user.Level_19_Browser_Testing_Docker" />
+                <testcase name="User_02_Login" time="2.669" classname="com.nopcommerce.user.Level_19_Browser_Testing_Docker" />
+                <testcase name="User_01_Register_Login" time="7.828" classname="com.nopcommerce.user.Level_19_Browser_Testing_Docker" />
+      
+</testsuite>

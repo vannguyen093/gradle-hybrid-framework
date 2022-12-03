@@ -97,7 +97,7 @@ test {
         jvmArgs "-javaagent:" + configurations.aspectj.asPath
     }
     useTestNG() {
-        suites 'src/test/resources/runNopCommerceBrowserstack.xml'
+        suites 'src/test/resources/runNopCommerceDocker.xml'
         outputDirectory = file("$projectDir/report-output")
     }
 

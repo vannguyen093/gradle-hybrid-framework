@@ -37,7 +37,7 @@ public class GridFactory {
                 System.setProperty("webdriver.gecko.driver", GlobalConstants.PROJECT_PATH + "\\browserDrivers\\geckodriver.exe");
                 capability = DesiredCapabilities.firefox();
                 capability.setBrowserName("firefox");
-                capability.setPlatform(Platform.WINDOWS);
+                capability.setPlatform(Platform.ANY);
                 System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
                 System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, GlobalConstants.PROJECT_PATH + "\\browserLogs\\FirefoxLog.log");
 
@@ -55,7 +55,7 @@ public class GridFactory {
                 WebDriverManager.chromedriver().setup();
                 capability = DesiredCapabilities.chrome();
                 capability.setBrowserName("chrome");
-                capability.setPlatform(Platform.WINDOWS);
+                capability.setPlatform(Platform.ANY);
                 System.setProperty("webdriver.chrome.args", "--disable-logging");
                 System.setProperty("webdriver.chrome.silentOutput", "true");
 
@@ -73,7 +73,7 @@ public class GridFactory {
                 WebDriverManager.edgedriver().setup();
                 capability = DesiredCapabilities.edge();
                 capability.setBrowserName("edge");
-                capability.setPlatform(Platform.WINDOWS);
+                capability.setPlatform(Platform.ANY);
 
                 EdgeOptions eOptions = new EdgeOptions();
                 eOptions.merge(capability);
