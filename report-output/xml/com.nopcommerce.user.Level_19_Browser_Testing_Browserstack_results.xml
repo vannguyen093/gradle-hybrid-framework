@@ -4,12 +4,12 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="32.543">
+           time="31.741">
   <properties />
   
   
-            <testcase name="User_01_Register_Login" time="20.797" classname="com.nopcommerce.user.Level_19_Browser_Testing_Browserstack" />
-                <testcase name="User_02_Login" time="6.465" classname="com.nopcommerce.user.Level_19_Browser_Testing_Browserstack" />
-                <testcase name="User_03_My_Account" time="5.281" classname="com.nopcommerce.user.Level_19_Browser_Testing_Browserstack" />
+            <testcase name="User_02_Login" time="7.436" classname="com.nopcommerce.user.Level_19_Browser_Testing_Browserstack" />
+                <testcase name="User_03_My_Account" time="5.049" classname="com.nopcommerce.user.Level_19_Browser_Testing_Browserstack" />
+                <testcase name="User_01_Register_Login" time="19.256" classname="com.nopcommerce.user.Level_19_Browser_Testing_Browserstack" />
       
 </testsuite>

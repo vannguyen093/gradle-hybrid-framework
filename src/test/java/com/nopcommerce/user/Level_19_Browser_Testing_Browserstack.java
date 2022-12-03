@@ -3,10 +3,7 @@ package com.nopcommerce.user;
 import commons.BaseTest;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import pageObjects.nopCommerce.PageGeneratorManager;
 import pageObjects.nopCommerce.user.UserCustomerInfoPageObject;
 import pageObjects.nopCommerce.user.UserHomePageObject;
@@ -25,14 +22,14 @@ public class Level_19_Browser_Testing_Browserstack extends BaseTest {
     private UserCustomerInfoPageObject customerInfoPage;
     Enviroment env;
 
-    @Parameters({"browser", "osName", "osVersion"})
+    @Parameters({"browser", "evnName", "ipAddress", "portNumber", "osName", "osVersion"})
     @BeforeClass
-    public void beforeClass(String browserName, String osName, String osVersion) {
+    public void beforeClass(@Optional("firefox") String browserName, @Optional("local") String evnName, @Optional("Windows") String osName, @Optional("10") String osVersion, @Optional("localhost") String ipAddress, @Optional("4444") String portNumber) {
         String enviromentName = System.getProperty("evnGradle");
         ConfigFactory.setProperty("env", enviromentName);
         env = ConfigFactory.create(Enviroment.class);
 
-        driver = getBrowserDriverBrowserstack(browserName, env.appUrl(), osName, osVersion);
+        driver = getBrowserDriver(browserName, env.appUrl(), evnName, osName, osVersion, ipAddress, portNumber);
 
         homePage = PageGeneratorManager.getUserHomePage(driver);
         dataHelper = DataHelper.getDataHelper();

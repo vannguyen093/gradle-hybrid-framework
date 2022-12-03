@@ -3,10 +3,7 @@ package com.nopcommerce.user;
 import commons.BaseTest;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import pageObjects.nopCommerce.PageGeneratorManager;
 import pageObjects.nopCommerce.user.UserCustomerInfoPageObject;
 import pageObjects.nopCommerce.user.UserHomePageObject;
@@ -25,14 +22,14 @@ public class Level_18_Multiple_Enviroment_Owner extends BaseTest {
     private UserCustomerInfoPageObject customerInfoPage;
     Enviroment env;
 
-    @Parameters({"browser"})
+    @Parameters({"browser", "evnName", "ipAddress", "portNumber", "osName", "osVersion"})
     @BeforeClass
-    public void beforeClass(String browserName) {
+    public void beforeClass(@Optional("firefox") String browserName, @Optional("local") String evnName, @Optional("Windows") String osName, @Optional("10") String osVersion, @Optional("localhost") String ipAddress, @Optional("4444") String portNumber) {
         String enviromentName = System.getProperty("evnGradle");
         ConfigFactory.setProperty("env", enviromentName);
         env = ConfigFactory.create(Enviroment.class);
 
-        driver = getBrowserDriverA(browserName, env.appUrl());
+        driver = getBrowserDriver(browserName, env.appUrl(), evnName, osName, osVersion, ipAddress, portNumber);
 
         homePage = PageGeneratorManager.getUserHomePage(driver);
         dataHelper = DataHelper.getDataHelper();
@@ -117,13 +114,13 @@ public class Level_18_Multiple_Enviroment_Owner extends BaseTest {
         verifyTrue(customerInfoPage.isMyAccountTitleDisplayed("My account - Customer info"));
 
         log.info("My Account - Step 03: Verify 'First Name' value is correctly");
-        verifyEquals(customerInfoPage.getTextboxValueById(driver,"FirstName"), firstName);
+        verifyEquals(customerInfoPage.getTextboxValueById(driver, "FirstName"), firstName);
 
         log.info("My Account - Step 03: Verify 'Last Name' value is correctly");
-        verifyEquals(customerInfoPage.getTextboxValueById(driver,"LastName"), lastName);
+        verifyEquals(customerInfoPage.getTextboxValueById(driver, "LastName"), lastName);
 
         log.info("My Account - Step 03: Verify 'Email' value is correctly");
-        verifyEquals(customerInfoPage.getTextboxValueById(driver,"Email"), email);
+        verifyEquals(customerInfoPage.getTextboxValueById(driver, "Email"), email);
     }
 
     @AfterClass(alwaysRun = true)

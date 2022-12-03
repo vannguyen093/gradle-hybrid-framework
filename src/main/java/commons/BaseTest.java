@@ -1,5 +1,6 @@
 package commons;
 
+import factoryEnviroment.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -33,18 +34,37 @@ public class BaseTest {
         deleteAllureReport();
     }
 
-    String projectPath = System.getProperty("user.dir");
-
     protected BaseTest() {
         log = LogFactory.getLog(getClass());
     }
 
+    protected WebDriver getBrowserDriver(String browserName, String enviromentName, String envName, String ipAddress, String portNumber, String osName, String osVersion) {
+        switch (envName) {
+            case "local":
+                driver = new LocalFactory(browserName).createDriver();
+                break;
+            case "browserStack":
+                driver = new BrowserStackFactory(browserName, osName, osVersion).createDriver();
+                break;
+            case "grid":
+                driver = new GridFactory(browserName, ipAddress, portNumber).createDriver();
+                break;
+            default:
+                driver = new LocalFactory(browserName).createDriver();
+                break;
+        }
+        driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
+        driver.get(enviromentName);
+        return driver;
+    }
+
+    //Không dùng nữa
     protected WebDriver getBrowserDriverA(String browserName, String appUrl) {
         BrowserList browserList = BrowserList.valueOf(browserName.toUpperCase());
         switch (browserList) {
             case FIREFOX:
                 //                WebDriverManager.firefoxdriver().setup();
-                System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
+                System.setProperty("webdriver.gecko.driver", GlobalConstants.PROJECT_PATH + "\\browserDrivers\\geckodriver.exe");
                 System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
                 System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, GlobalConstants.PROJECT_PATH + "\\browserLogs\\FirefoxLog.log");
                 driver = new FirefoxDriver();
@@ -81,62 +101,15 @@ public class BaseTest {
         return driver;
     }
 
+    //Không dùng nữa
     protected WebDriver getBrowserDriverE(String browserName, String enviromentName) {
-        BrowserList browserList = BrowserList.valueOf(browserName.toUpperCase());
-        switch (browserList) {
-            case FIREFOX:
-                //                WebDriverManager.firefoxdriver().setup();
-                System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
-                System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
-                System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, GlobalConstants.PROJECT_PATH + "\\browserLogs\\FirefoxLog.log");
-                driver = new FirefoxDriver();
-                break;
-            case H_FIREFOX:
-                WebDriverManager.firefoxdriver().setup();
-                FirefoxOptions options = new FirefoxOptions();
-                options.addArguments("--headless");
-                options.addArguments("window-size=1920x1080");
-                driver = new FirefoxDriver(options);
-                break;
-            case CHROME:
-                WebDriverManager.chromedriver().setup();
-                System.setProperty("webdriver.chrome.args", "--disable-logging");
-                System.setProperty("webdriver.chrome.silentOutput", "true");
-                driver = new ChromeDriver();
-                break;
-            case H_CHROME:
-                WebDriverManager.chromedriver().setup();
-                ChromeOptions optionChrome = new ChromeOptions();
-                optionChrome.addArguments("--headless");
-                optionChrome.addArguments("window-size=1920x1080");
-                driver = new ChromeDriver(optionChrome);
-                break;
-            case EDGE:
-                WebDriverManager.edgedriver().setup();
-                driver = new EdgeDriver();
-                break;
-            default:
-                throw new RuntimeException("Browser not supported: " + browserName);
-        }
         driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
         driver.get(enviromentName);
         return driver;
     }
 
+    //Không dùng nữa
     protected WebDriver getBrowserDriverBrowserstack(String browserName, String enviromentName, String osName, String osVersion) {
-        DesiredCapabilities caps = new DesiredCapabilities();
-        caps.setCapability("os", osName);
-        caps.setCapability("os_version", osVersion);
-        caps.setCapability("browser", browserName);
-        caps.setCapability("project", "NopCommerce");
-        caps.setCapability("browser_version", "latest");
-        caps.setCapability("browserstack.debug", "true");
-        caps.setCapability("name", "Run on " + osName + " | " + osVersion + " | " + browserName);
-        try {
-            driver = new RemoteWebDriver(new URL(GlobalConstants.BROWSER_STACK_URL), caps);
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        }
         driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
         driver.get(enviromentName);
         return driver;
@@ -146,6 +119,7 @@ public class BaseTest {
         return this.driver;
     }
 
+    //Không dùng nữa
     private String getEnvironmentUrl(String enviromentName) {
         String envUrl = null;
         EnviromentList enviroment = EnviromentList.valueOf(enviromentName.toUpperCase());

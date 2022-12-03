@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="NopCommerce">
 
+    <parameter name="evnName" value="browserStack" />
+
     <listeners>
         <listener class-name="commons.MethodListener"/>
             <listener class-name="reportConfig.ReportNGListener"/>

@@ -175,3 +175,111 @@ Session ID: c020f418-8bf8-4e43-89a5-8cec0d5279ba
 [2022-12-02 14:47:25,458]  -------------------------- PASSED -------------------------- 
 [2022-12-02 14:47:25,462] OS name = windows 10
 [2022-12-02 14:47:25,462] Driver instance name = remotewebdriver: safari on mac (0ae25ecf0d046b0c0cc778d7481fa78e1c47fd55)
+[2022-12-03 08:57:48,583] OS name = windows 10
+[2022-12-03 08:57:48,593] 
+[2022-12-03 08:57:48,800] OS name = windows 10
+[2022-12-03 08:57:48,800] 
+[2022-12-03 09:08:16,312] OS name = windows 10
+[2022-12-03 09:08:16,419] 
+[2022-12-03 09:08:16,598] OS name = windows 10
+[2022-12-03 09:08:16,602] 
+[2022-12-03 09:10:51,129] OS name = windows 10
+[2022-12-03 09:10:51,229] 
+[2022-12-03 09:10:51,352] OS name = windows 10
+[2022-12-03 09:10:51,355] 
+[2022-12-03 09:14:42,228] OS name = windows 10
+[2022-12-03 09:14:42,229] 
+[2022-12-03 09:16:39,551] OS name = windows 10
+[2022-12-03 09:16:39,557] 
+[2022-12-03 10:27:54,422] OS name = windows 10
+[2022-12-03 10:27:54,431] 
+[2022-12-03 10:33:06,814] Register - Step 01: Click to 'Register' link
+[2022-12-03 10:33:07,954] Register - Step 02: Click to 'Radio' button with value 'Male'
+[2022-12-03 10:33:08,091] Register - Step 03: Enter to First Name textbox with value is Stacee
+[2022-12-03 10:33:08,259] Register - Step 04: Enter to Last Name textbox with value is Herzog
+[2022-12-03 10:33:08,460] Register - Step 05: Select date in Day dropdown with value is 30
+[2022-12-03 10:33:08,683] Register - Step 06: Select month in Month dropdown with value is May
+[2022-12-03 10:33:09,157] Register - Step 07: Select year in Year dropdown with value is 1993
+[2022-12-03 10:33:09,343] Register - Step 08: Enter to Email textbox with value is glynda.hoppe@yahoo.com
+[2022-12-03 10:33:09,520] Register - Step 09: Enter to Password textbox with value is 8122auz5vxusm
+[2022-12-03 10:33:09,706] Register - Step 10: Enter to Confirm Password textbox with value is 8122auz5vxusm
+[2022-12-03 10:33:09,870] Register - Step 11: Click to 'News letter' checkbox
+[2022-12-03 10:33:09,968] Register - Step 12: Click to 'Register' button
+[2022-12-03 10:33:10,796] Register - Step 13: Verify the 'Success Message' is displayed
+[2022-12-03 10:33:10,911]  -------------------------- PASSED -------------------------- 
+[2022-12-03 10:33:10,911] Register - Step 14: Click to 'Log out' link
+[2022-12-03 10:33:11,831] Login - Step 01: Click to 'Login' link
+[2022-12-03 10:33:12,311] Login - Step 02: Enter to Email textbox with value is glynda.hoppe@yahoo.com
+[2022-12-03 10:33:12,473] Login - Step 03: Enter to Password textbox with value is 8122auz5vxusm
+[2022-12-03 10:33:12,643] Login - Step 04: Click to 'Login' button
+[2022-12-03 10:33:13,392] My Account - Step 01: Click to 'My Account' link
+[2022-12-03 10:33:13,921] My Account - Step 02: Verify 'Customer Info' page is displayed
+[2022-12-03 10:33:14,001]  -------------------------- PASSED -------------------------- 
+[2022-12-03 10:33:14,001] My Account - Step 03: Verify 'First Name' value is correctly
+[2022-12-03 10:33:14,055]  -------------------------- PASSED -------------------------- 
+[2022-12-03 10:33:14,055] My Account - Step 03: Verify 'Last Name' value is correctly
+[2022-12-03 10:33:14,119]  -------------------------- PASSED -------------------------- 
+[2022-12-03 10:33:14,119] My Account - Step 03: Verify 'Email' value is correctly
+[2022-12-03 10:33:14,182]  -------------------------- PASSED -------------------------- 
+[2022-12-03 10:33:14,185] OS name = windows 10
+[2022-12-03 10:33:14,185] Driver instance name = chromedriver: chrome on windows (9e808cc884a276897da2a780af88a756)
+[2022-12-03 10:34:22,727] Register - Step 01: Click to 'Register' link
+[2022-12-03 10:34:26,018] Register - Step 02: Click to 'Radio' button with value 'Male'
+[2022-12-03 10:34:27,224] Register - Step 03: Enter to First Name textbox with value is Floyd
+[2022-12-03 10:34:28,049] Register - Step 04: Enter to Last Name textbox with value is Mitchell
+[2022-12-03 10:34:28,876] Register - Step 05: Select date in Day dropdown with value is 30
+[2022-12-03 10:34:30,532] Register - Step 06: Select month in Month dropdown with value is May
+[2022-12-03 10:34:32,206] Register - Step 07: Select year in Year dropdown with value is 1993
+[2022-12-03 10:34:33,797] Register - Step 08: Enter to Email textbox with value is katherina.rolfson@yahoo.com
+[2022-12-03 10:34:34,616] Register - Step 09: Enter to Password textbox with value is l2qp7dkglw
+[2022-12-03 10:34:35,441] Register - Step 10: Enter to Confirm Password textbox with value is l2qp7dkglw
+[2022-12-03 10:34:36,286] Register - Step 11: Click to 'News letter' checkbox
+[2022-12-03 10:34:37,077] Register - Step 12: Click to 'Register' button
+[2022-12-03 10:34:39,744] Register - Step 13: Verify the 'Success Message' is displayed
+[2022-12-03 10:34:40,393]  -------------------------- PASSED -------------------------- 
+[2022-12-03 10:34:40,393] Register - Step 14: Click to 'Log out' link
+[2022-12-03 10:34:42,099] Login - Step 01: Click to 'Login' link
+[2022-12-03 10:34:44,509] Login - Step 02: Enter to Email textbox with value is katherina.rolfson@yahoo.com
+[2022-12-03 10:34:46,342] Login - Step 03: Enter to Password textbox with value is l2qp7dkglw
+[2022-12-03 10:34:47,820] Login - Step 04: Click to 'Login' button
+[2022-12-03 10:34:49,528] My Account - Step 01: Click to 'My Account' link
+[2022-12-03 10:34:51,954] My Account - Step 02: Verify 'Customer Info' page is displayed
+[2022-12-03 10:34:52,655]  -------------------------- PASSED -------------------------- 
+[2022-12-03 10:34:52,656] My Account - Step 03: Verify 'First Name' value is correctly
+[2022-12-03 10:34:53,290]  -------------------------- PASSED -------------------------- 
+[2022-12-03 10:34:53,291] My Account - Step 03: Verify 'Last Name' value is correctly
+[2022-12-03 10:34:53,942]  -------------------------- PASSED -------------------------- 
+[2022-12-03 10:34:53,942] My Account - Step 03: Verify 'Email' value is correctly
+[2022-12-03 10:34:54,575]  -------------------------- PASSED -------------------------- 
+[2022-12-03 10:34:54,579] OS name = windows 10
+[2022-12-03 10:34:54,580] Driver instance name = remotewebdriver: firefox on windows (35ff768cb0cf8678a9e160befa2ae7ef4cdbb52e)
+[2022-12-03 10:35:05,916] Register - Step 01: Click to 'Register' link
+[2022-12-03 10:35:06,920] Register - Step 02: Click to 'Radio' button with value 'Male'
+[2022-12-03 10:35:09,680] Register - Step 03: Enter to First Name textbox with value is Lester
+[2022-12-03 10:35:10,554] Register - Step 04: Enter to Last Name textbox with value is Kulas
+[2022-12-03 10:35:11,367] Register - Step 05: Select date in Day dropdown with value is 30
+[2022-12-03 10:35:12,790] Register - Step 06: Select month in Month dropdown with value is May
+[2022-12-03 10:35:14,177] Register - Step 07: Select year in Year dropdown with value is 1993
+[2022-12-03 10:35:15,583] Register - Step 08: Enter to Email textbox with value is arlie.erdman@yahoo.com
+[2022-12-03 10:35:16,577] Register - Step 09: Enter to Password textbox with value is ofbxhkjz1
+[2022-12-03 10:35:17,450] Register - Step 10: Enter to Confirm Password textbox with value is ofbxhkjz1
+[2022-12-03 10:35:18,307] Register - Step 11: Click to 'News letter' checkbox
+[2022-12-03 10:35:19,051] Register - Step 12: Click to 'Register' button
+[2022-12-03 10:35:19,879] Register - Step 13: Verify the 'Success Message' is displayed
+[2022-12-03 10:35:22,569]  -------------------------- PASSED -------------------------- 
+[2022-12-03 10:35:22,569] Register - Step 14: Click to 'Log out' link
+[2022-12-03 10:35:23,393] Login - Step 01: Click to 'Login' link
+[2022-12-03 10:35:25,200] Login - Step 02: Enter to Email textbox with value is arlie.erdman@yahoo.com
+[2022-12-03 10:35:27,943] Login - Step 03: Enter to Password textbox with value is ofbxhkjz1
+[2022-12-03 10:35:29,584] Login - Step 04: Click to 'Login' button
+[2022-12-03 10:35:30,401] My Account - Step 01: Click to 'My Account' link
+[2022-12-03 10:35:32,207] My Account - Step 02: Verify 'Customer Info' page is displayed
+[2022-12-03 10:35:33,659]  -------------------------- PASSED -------------------------- 
+[2022-12-03 10:35:33,659] My Account - Step 03: Verify 'First Name' value is correctly
+[2022-12-03 10:35:34,319]  -------------------------- PASSED -------------------------- 
+[2022-12-03 10:35:34,320] My Account - Step 03: Verify 'Last Name' value is correctly
+[2022-12-03 10:35:34,945]  -------------------------- PASSED -------------------------- 
+[2022-12-03 10:35:34,946] My Account - Step 03: Verify 'Email' value is correctly
+[2022-12-03 10:35:35,601]  -------------------------- PASSED -------------------------- 
+[2022-12-03 10:35:35,605] OS name = windows 10
+[2022-12-03 10:35:35,605] Driver instance name = remotewebdriver: safari on mac (ac3228adf4f02781b6675761f5f769d1816d484d)
